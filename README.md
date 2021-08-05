@@ -8,7 +8,7 @@
 <h1 align="center" style="margin-top: 0px;">CREDITS</h1>
 <p align="center">
   Milxnor (me): Well, everything (mostly)<br>
-  <a href="https://github.com/Xenia0/Curl-Server-Manipulation">Xenia</a>: he reversed curl and yeah (NOTE: If you want me to take this down, contact me at Milxnor#0101)
+  <a href="https://github.com/Xenia0/Curl-Server-Manipulation">Xenia</a>: He reversed curl (Xenia, if you want me to take this down, create a issue)
 </p>
 
 <h1 align="center" style="margin-top: 0px;">HISTORY</h1>
