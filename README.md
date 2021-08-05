@@ -13,7 +13,7 @@
 
 <h1 align="center" style="margin-top: 0px;">HISTORY</h1>
 <p align="center">
-  CobaltV1: It was private and used on StormFN. Pretty bad, might open-source one day.
-  CobaltV2: Dumpster Fire, whole thing took me like 2-4hours. I've learned so much since then.
-  CobaltV3: Hopefully acceptable.
+  CobaltV1: It was private and used on StormFN. Pretty bad, might open-source one day.<br>
+  CobaltV2: Dumpster Fire, whole thing took me like 2-4hours. I've learned so much since then.<br>
+  CobaltV3: Hopefully acceptable.<br>
 </p>
