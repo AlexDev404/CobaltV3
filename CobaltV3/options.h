@@ -9,3 +9,4 @@ constexpr int vS13 = 13;
 constexpr int Version = vProd;
 constexpr bool bIsHybrid = true;
 const char* ProxyHost = "";
+int HookMethod = KIERO;

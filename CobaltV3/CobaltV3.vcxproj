@@ -160,16 +160,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Third Party\Kiero\kiero.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hooks.h" />
     <ClInclude Include="Third Party\defs.h" />
     <ClInclude Include="options.h" />
+    <ClInclude Include="Third Party\Kiero\kiero.h" />
+    <ClInclude Include="Third Party\MinHook\MinHook.h" />
     <ClInclude Include="Third Party\xorstr.hpp" />
     <ClInclude Include="Utils\errors.h" />
+    <ClInclude Include="Utils\hook.h" />
     <ClInclude Include="Utils\logs.h" />
     <ClInclude Include="Utils\memory.h" />
     <ClInclude Include="Utils\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Third Party\MinHook\minhook.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

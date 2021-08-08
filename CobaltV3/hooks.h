@@ -9,6 +9,7 @@
 #include <Windows.h>
 #include "Utils/memory.h"
 #include <xorstr.hpp>
+#include "Utils/logs.h"
 
 uintptr_t CurlEasyOptP;
 uintptr_t CurlSetOptP;
@@ -74,7 +75,7 @@ public:
                 else if (std::regex_search(info, std::regex(ENC("platform=Windows")))) {
                     if (Version == vS13)
                     {
-                        url = std::regex_replace(info, Host, "platform=IOS");
+                        url = std::regex_replace(info, Host, ENC("platform=IOS"));
                         Log(ENC("Changed Windows to IOS"));
                     }
                 }

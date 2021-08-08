@@ -42,7 +42,7 @@ void WriteToLog(const char* msg)
 }
 
 
-void Log(int msg, int color, bool bNl, bool err)
+void Log(int msg, int color = Colors::defaultGray, bool bNl = true, bool err = false)
 {
     if (err)
     {
@@ -55,7 +55,29 @@ void Log(int msg, int color, bool bNl, bool err)
     if (bNl) nl();
 }
 
-void Log(std::string msg, int color, bool bNl, bool debug, bool rainbowLog)
+void Log(std::string msg, int color = Colors::defaultGray, bool bNl = true, bool debug = false, bool rainbowLog = false)
+{
+    if (debug)
+    {
+        if (Version == vProd) return;
+    }
+    if (rainbowLog)
+    {
+        std::string msgStr = msg;
+        bool t = RainbowLog(msgStr);
+        if (t)
+        {
+            if (bNl) nl();
+        }
+        return;
+    }
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, color);
+    std::cout << msg;
+    if (bNl) nl();
+}
+
+void Log(const char* msg, int color = Colors::defaultGray, bool bNl = true, bool debug = false, bool rainbowLog = false)
 {
     if (debug)
     {
