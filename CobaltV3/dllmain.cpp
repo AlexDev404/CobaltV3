@@ -11,14 +11,14 @@ DWORD WINAPI Main(LPVOID lpParam)
     //if (bIsS13 && PROCESSEVENTHOOK) Hooking::Hook((void*)S13PEP, ProcessEvent::S13PE, S13PEOG, HookMethod);
     //if (bIsProd && PROCESSEVENTHOOK) Hooking::Hook((void*)PRODPEP, ProcessEvent::PRODPE, PRODPEOG, HookMethod);
     const char* ascii = ENC(R"(
-_________     ______        _____________    _______
-__  ____ / ________ / _______ ___ / _ / __ |  / /_ | __ \
-_ / _  __ \_  __ \  __ `/_ / _  __ / _ | / /____/ /
-/ /___  / /_/ /  /_/ / /_/ /_  / / /_ __ |/ / _  __ /
-\____ / \____//_.___/\__,_/ /_/  \__/ _____/  /____/ 
+   ___         _             _  _            _____ 
+  / __\  ___  | |__    __ _ | || |_ /\   /\ |___ / 
+ / /    / _ \ | '_ \  / _` || || __|\ \ / /   |_ \ 
+/ /___ | (_) || |_) || (_| || || |_  \ V /   ___) |
+\____/  \___/ |_.__/  \__,_||_| \__|  \_/   |____/ 
 )");
     Log(ascii);
-    Log("\nLaunching CobaltV2!"); //(" + ver);
+    Log("\nLaunching CobaltV3!"); //(" + ver);
     Log(std::string("Redirecting to ") + FNhost, true, true);
 }
 
