@@ -164,11 +164,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hooks.h" />
+    <ClInclude Include="main.h" />
     <ClInclude Include="Third Party\defs.h" />
     <ClInclude Include="options.h" />
     <ClInclude Include="Third Party\Kiero\kiero.h" />
     <ClInclude Include="Third Party\MinHook\MinHook.h" />
     <ClInclude Include="Third Party\xorstr.hpp" />
+    <ClInclude Include="Utils\enums.h" />
     <ClInclude Include="Utils\errors.h" />
     <ClInclude Include="Utils\hook.h" />
     <ClInclude Include="Utils\logs.h" />

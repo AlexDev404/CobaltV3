@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Utils/enums.h"
+
 constexpr bool SendLogsToConsole = true;
 constexpr bool WritePEToLogs = false;
 constexpr bool INGAME = true;

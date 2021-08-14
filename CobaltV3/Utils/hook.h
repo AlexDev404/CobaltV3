@@ -7,14 +7,7 @@
 #include "errors.h"
 #include "logs.h"
 #include <string>
-
-const int VEH = 0; // VectoredExceptionHandler
-const int MH = 1; // MinHook
-const int KIERO = 2; // DX9, DX10, Vulkan, DX11, DX12, OpenGl, etc.
-
-bool InitVEH = false;
-bool InitMH = false;
-bool InitKiero = false;
+#include "enums.h"
 
 struct HookInfo
 {
@@ -57,6 +50,7 @@ LONG WINAPI VectoredExceptionHandler(EXCEPTION_POINTERS* Exception)
 	}
 
 	return EXCEPTION_CONTINUE_SEARCH; */
+	return NULL;
 }
 
 class Hooking
@@ -114,7 +108,7 @@ public:
 			{
 				if (a == kiero::Status::NotInitializedError)
 				{
-					Log(KIERO_NOT_INITIALIZED, Colors::defaultGray, true, true);
+					LogInt(KIERO_NOT_INITIALIZED, Colors::defaultGray, true, true);
 				}
 				return false;
 			}

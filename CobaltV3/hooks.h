@@ -11,6 +11,8 @@
 #include <xorstr.hpp>
 #include "Utils/logs.h"
 
+using namespace Logs;
+
 uintptr_t CurlEasyOptP;
 uintptr_t CurlSetOptP;
 uintptr_t S13PEP;
@@ -124,4 +126,9 @@ public:
         CurlEasyOptP = NULL;
         CurlSetOptP = NULL;
     } */
+};
+
+class ProcessEvent
+{
+    
 };
